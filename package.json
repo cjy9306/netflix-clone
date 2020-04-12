@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/cjy9306/netflix-clone#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "axios": "^0.19.2",
+    "babel-plugin-macros": "^2.8.0",
     "file-loader": "^6.0.0",
     "next": "^9.3.4",
     "nextjs-progressbar": "0.0.4",
