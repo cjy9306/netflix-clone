@@ -4,11 +4,15 @@ import Movie from './Movie';
 const GenreContainer = styled.section`
     color: white;
     margin-bottom: 48px;
-    postition: relative;
+    position: relative;
     z-index: 4;
 `;
 
-const GenreHeader = styled.div``;
+const GenreHeader = styled.div`
+    font-size: 1.4vw;
+    line-height: 1.3;
+    margin-bottom: 0.25em;
+`;
 
 const GenreContents = styled.div`
     overflow-x: auto;
@@ -18,9 +22,7 @@ const GenreContents = styled.div`
 const Genre = ({ type, movieList }) => {
     return (
         <GenreContainer>
-            <GenreHeader>
-                <h1>{type}</h1>
-            </GenreHeader>
+            <GenreHeader>{type}</GenreHeader>
             <GenreContents>
                 {movieList &&
                     Array.isArray(movieList) &&
