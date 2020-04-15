@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import Image from '../static/images/money-heist.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -27,7 +26,7 @@ const PreviewContents = styled.div`
 `;
 
 const PreviewTitle = styled.img`
-    width: 50vw;
+    width: 30vw;
     margin-bottom: 36px;
 `;
 
@@ -100,20 +99,21 @@ const GradientBackground = styled.div`
     );
 `;
 
-const Preview = () => {
+const Preview = ({
+    previewImage,
+    previewTitleSrc,
+    previewTitle,
+    previewSynopsis,
+}) => {
     return (
         <PreviewContainer>
-            <PreviewImage src={Image} alt="money heist image" />
+            <PreviewImage src={previewImage} alt="money heist image" />
             <PreviewContents>
                 <PreviewTitle
-                    src="https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABeHQmcfN2eqyuRLTT4aCZthPoZEnl7BQZV6ZjGkSaaxxW3-Kh7S6aS1k6YEJAuCj_nkLxlHT27L7b-5BOu8GZQfoR_lsC4CzvpwAbs9CrMXVrKM4NaLYnWLrZedokZHYXDMLcRu_NFKV6GOPzwduDYbS_o0yRzPGK_MxcJTlyYw.webp?r=6df"
-                    alt="money heist title"
+                    src={previewTitleSrc}
+                    alt={`${previewTitle} image`}
                 />
-                <PreviewSubTitle>
-                    사상 최대의 무장강도를 치밀하게 계획해 온 '교수'. 잃을 것
-                    없는 8인을 지휘하여 스페인 조폐국에 침투시킨다. 인질까지
-                    잡았으니 이젠 독 안에 든 쥐가 될 차례.
-                </PreviewSubTitle>
+                <PreviewSubTitle>{previewSynopsis}</PreviewSubTitle>
                 <PlayButton>
                     <CustomIcon icon={faPlay} size="xs" />
                     재생

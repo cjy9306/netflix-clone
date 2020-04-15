@@ -9,6 +9,15 @@ const RootContainer = styled.div`
     padding-left: 60px;
 `;
 
+const previewImage =
+    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABa-4uIolh9b_JQkoxWNtBJXh4VteD0CSrm7vquPbsWftX1TOl4k5EvoPKZEfPlLdhG25LINS3Ra5NJw73vBFApSYAwAftAqYxIOe5Nf_luMIFSkmTA.webp?r=940';
+const previewTitleSrc =
+    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABeHQmcfN2eqyuRLTT4aCZthPoZEnl7BQZV6ZjGkSaaxxW3-Kh7S6aS1k6YEJAuCj_nkLxlHT27L7b-5BOu8GZQfoR_lsC4CzvpwAbs9CrMXVrKM4NaLYnWLrZedokZHYXDMLcRu_NFKV6GOPzwduDYbS_o0yRzPGK_MxcJTlyYw.webp?r=6df';
+const previewTitle = 'money heist';
+const previewSynopsis = `사상 최대의 무장강도를 치밀하게 계획해 온 '교수'. 잃을 것
+                없는 8인을 지휘하여 스페인 조폐국에 침투시킨다. 인질까지
+                잡았으니 이젠 독 안에 든 쥐가 될 차례.`;
+
 const Home = ({ recommend, original, topRated, trend }) => {
     const options = { threshold: 0.01 };
     let observer = null;
@@ -32,7 +41,12 @@ const Home = ({ recommend, original, topRated, trend }) => {
 
     return (
         <>
-            <Preview />
+            <Preview
+                previewImage={previewImage}
+                previewTitleSrc={previewTitleSrc}
+                previewTitle={previewTitle}
+                previewSynopsis={previewSynopsis}
+            />
             <RootContainer>
                 <Genre type="인기 콘텐츠" movieList={recommend.results} />
                 <Genre type="넷플릭스 오리지널" movieList={original.results} />
