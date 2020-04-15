@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 import axios from 'axios';
-import Genre from '../components/home/Genre';
-import Preview from '../components/home/Preview';
+import Genre from '../components/Genre';
+import Preview from '../components/Preview';
 import { useEffect } from 'react';
 
 const RootContainer = styled.div`
