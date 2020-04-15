@@ -34,10 +34,13 @@ const Home = ({ recommend, original, topRated, trend }) => {
         <>
             <Preview />
             <RootContainer>
-                <Genre type="Recommendation" movieList={recommend.results} />
-                <Genre type="Netflix Originals" movieList={original.results} />
-                <Genre type="Top Rated" movieList={topRated.results} />
-                <Genre type="Trend" movieList={trend.results} />
+                <Genre type="인기 콘텐츠" movieList={recommend.results} />
+                <Genre type="넷플릭스 오리지널" movieList={original.results} />
+                <Genre
+                    type="다시보기 추천 콘텐츠"
+                    movieList={topRated.results}
+                />
+                <Genre type="지금 뜨는 콘텐츠" movieList={trend.results} />
             </RootContainer>
         </>
     );

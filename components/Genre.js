@@ -12,6 +12,7 @@ const GenreHeader = styled.div`
     font-size: 1.4vw;
     line-height: 1.3;
     margin-bottom: 0.25em;
+    font-weight: bold;
 `;
 
 const GenreContents = styled.div`

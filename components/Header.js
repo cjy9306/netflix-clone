@@ -62,12 +62,12 @@ const Header = () => {
                 </Link>
             </ProgramWrapper>
             <ProgramWrapper>
-                <Link href="/tv">
+                <Link href="/originals">
                     <a>오리지널</a>
                 </Link>
             </ProgramWrapper>
             <ProgramWrapper>
-                <Link href="/movie">
+                <Link href="/movies">
                     <a>영화</a>
                 </Link>
             </ProgramWrapper>
