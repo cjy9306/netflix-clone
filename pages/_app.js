@@ -21,11 +21,12 @@ const MyApp = ({ Component, pageProps }) => {
                     content="Netflix clone site for portfolio"
                 />
                 <meta property="og:title" content="netflix-clone" />
-                <meta
-                    property="og:url"
-                    content="http://cjy9306.iptime.org:3000"
-                />
+                <meta property="og:url" content="http://localhost:3000" />
                 <meta property="og:description" content="Netflix-clone" />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto&display=swap"
+                    rel="stylesheet"
+                />
                 <link rel="stylesheet" type="text/css" href={ResetCss} />
             </Head>
             <NextNProgress />

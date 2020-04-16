@@ -11,9 +11,9 @@ const RootContainer = styled.div`
 `;
 
 const previewImage =
-    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABa-4uIolh9b_JQkoxWNtBJXh4VteD0CSrm7vquPbsWftX1TOl4k5EvoPKZEfPlLdhG25LINS3Ra5NJw73vBFApSYAwAftAqYxIOe5Nf_luMIFSkmTA.webp?r=940';
+    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWZXwedGPs1rOcEUc4r-4HsJqQPID9dCF6f15JGzb7maXNhMkHDJ7C9pkD5sSfnIuDfUiW7njuSSJIqjM22Z9DoHd7_aaZy6WfmIOmDAyJZH6vtfjg.jpg?r=940';
 const previewTitleSrc =
-    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABeHQmcfN2eqyuRLTT4aCZthPoZEnl7BQZV6ZjGkSaaxxW3-Kh7S6aS1k6YEJAuCj_nkLxlHT27L7b-5BOu8GZQfoR_lsC4CzvpwAbs9CrMXVrKM4NaLYnWLrZedokZHYXDMLcRu_NFKV6GOPzwduDYbS_o0yRzPGK_MxcJTlyYw.webp?r=6df';
+    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABZdzv4Hk_wd-VMRVOtg5lI2QQGhQoQoRQQN6CPup9OmTHLnmG3VUpRgx-3Bf3eLMH-lsgKvnAjl9LzIJ2XlTe5ob41wHArk2BgN0rKoHj4Z2XNYST-QUGHFkNLe5lxOsOPI-tHakFqhXXMO-zictPfehOHrAYh9cDytqxHy4g1g.png?r=6df';
 const previewTitle = 'money heist';
 const previewSynopsis = `사상 최대의 무장강도를 치밀하게 계획해 온 '교수'. 잃을 것
                 없는 8인을 지휘하여 스페인 조폐국에 침투시킨다. 인질까지

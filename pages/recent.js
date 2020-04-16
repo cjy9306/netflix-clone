@@ -11,9 +11,9 @@ const RootContainer = styled.div`
 `;
 
 const previewImage =
-    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABR7InFQQYLWEbnqpvuJdsKKPsyBzMwFJQIQbwV5Ab3zr8jp_gbIolqgSL2wGSSKFbUMmjnYV9Iwc6-gAfNHT1z40Uwcy.webp?r=048';
+    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABdchrxNxK8jhUw9MWJvnsezbFxzQyl6cIXai3hVamJdLcHvPWvQrjmVEc3inUVt1d2JA6_R9uKfakQu4zFptV378Pr2-.jpg?r=048';
 const previewTitleSrc =
-    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABSf9EBa-bF5uDD3_DvxZy8ioBoTx6oJnnGWPzFN6m1Q2B_5qxdAGJ3nzEUtO_sQnQ70bN0W4BfgULMYcW52z5KnR_KgAhFjAaA.webp?r=e74';
+    'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABd-7iPy8CQ95U_Xjm-xFlTE-DVEKCtINBlbXP24444y_RXCS9EQrLT4Ov0BeKqd-BT_7wD3smhQ9P_FcKYJtuj6jmlTDG9JFKw.png?r=e74';
 const previewTitle = 'money heist';
 const previewSynopsis = `내 이름은 코너. 초능력을 타고난 탓에 세상이 배척하는 존재가 됐지. 영웅이 될 수 없는 능력이라면, 아픈 어머니를 위해서라도 써야겠다. 그 어떤 대가를 치르더라도.`;
 
