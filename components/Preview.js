@@ -1,3 +1,7 @@
+/* 
+    각 페이지의 프리뷰에 해당하는 컴포넌트
+    각 페이지의 대표 영화 혹은 프로그램의 이미지와 제목, 설명을 보여줌
+*/
 import styled from 'styled-components/macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faCheck } from '@fortawesome/free-solid-svg-icons';

@@ -1,3 +1,4 @@
+/* 넷플릭스 클론 사이트의 메인 페이지 */
 import styled from 'styled-components/macro';
 import axios from 'axios';
 import Genre from '../components/Genre';
@@ -22,8 +23,8 @@ const Home = ({ recommend, original, topRated, trend }) => {
     const options = { threshold: 0.01 };
     let observer = null;
 
+    // 이미지를 lazy loading하기 위해 IntersectionObserver에 등록
     useEffect(() => {
-        // for lazy image
         if (window && 'IntersectionObserver' in window) {
             observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
@@ -60,6 +61,10 @@ const Home = ({ recommend, original, topRated, trend }) => {
     );
 };
 
+/* 
+    모든 장르 및 종류 별 영화를 가져옴.
+    기본적으로 4개의 장르 및 종류만 데이터를 themoivedb에서 가져옴
+ */
 Home.getInitialProps = async () => {
     const recommendResponse = axios.get(
         'https://api.themoviedb.org/3/discover/movie?api_key=a264d351a4f7f43ff9d320735e17c308&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1'

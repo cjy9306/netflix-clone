@@ -1,3 +1,4 @@
+/* 영화 리스트를 보여주는 페이지 */
 import styled from 'styled-components/macro';
 import axios from 'axios';
 import Genre from '../components/Genre';
@@ -20,8 +21,8 @@ const Movies = ({ page1, page2, page3, page4 }) => {
     const options = { threshold: 0.01 };
     let observer = null;
 
+    // 이미지를 lazy loading하기 위해 IntersectionObserver에 등록
     useEffect(() => {
-        // for lazy image
         if (window && 'IntersectionObserver' in window) {
             observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
@@ -55,6 +56,10 @@ const Movies = ({ page1, page2, page3, page4 }) => {
     );
 };
 
+/* 
+    평점이 높은 순서대로 영화 리스트를 긁어옴.
+    themoviedb에서 movie/top_rated에 해당하는 페이지 4개를 긁어옴.
+ */
 Movies.getInitialProps = async () => {
     const page1Response = axios.get(
         'https://api.themoviedb.org/3/movie/top_rated?api_key=a264d351a4f7f43ff9d320735e17c308&language=en-US&page=1'

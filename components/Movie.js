@@ -1,3 +1,7 @@
+/* 
+    영화 또는 프로그램 하나를 나타내는 컴포넌트.
+    seo를 위해 우선 영화 제목만 사용
+*/
 import styled from 'styled-components/macro';
 import LazyImage from './LazyImage';
 
@@ -29,9 +33,9 @@ const Movie = ({ movie }) => {
                 src={movie.poster_path}
                 alt={`${movie.original_title || movie.name} poster`}
             />
-            {/* <MovieContents>
+            <MovieContents>
                 <h2>{movie.original_title || movie.name}</h2>
-            </MovieContents> */}
+            </MovieContents>
         </MovieContainer>
     );
 };

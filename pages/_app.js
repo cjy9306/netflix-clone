@@ -1,3 +1,7 @@
+/* 
+    모든 페이지가 실행될 때 실행되는 페이지
+    NextNProgress를 사용함으로 페이지 이동시 프로그레스바를 보여줌
+*/
 import Head from 'next/head';
 import NextNProgress from 'nextjs-progressbar';
 import ResetCss from '../static/css/reset.css';

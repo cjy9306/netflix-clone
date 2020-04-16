@@ -1,3 +1,4 @@
+/* 최신 넷플릭스 컨텐츠를 보여주는 페이지 */
 import styled from 'styled-components/macro';
 import axios from 'axios';
 import Genre from '../components/Genre';
@@ -22,8 +23,8 @@ const Recent = ({ page1, page2, page3, page4 }) => {
     const options = { threshold: 0.01 };
     let observer = null;
 
+    // 이미지를 lazy loading하기 위해 IntersectionObserver에 등록
     useEffect(() => {
-        // for lazy image
         if (window && 'IntersectionObserver' in window) {
             observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
@@ -57,6 +58,10 @@ const Recent = ({ page1, page2, page3, page4 }) => {
     );
 };
 
+/* 
+    !! 최신 컨텐츠 api에 최신 컨텐츠가 많이 없어 임시적으로 영화 시리즈를 가저옴
+    themoviedb에서 discover/movie에 해당하는 페이지 4개를 긁어옴.
+ */
 Recent.getInitialProps = async () => {
     const page1Response = axios.get(
         'https://api.themoviedb.org/3/discover/movie?api_key=a264d351a4f7f43ff9d320735e17c308&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1'

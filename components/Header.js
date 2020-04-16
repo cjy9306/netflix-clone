@@ -1,3 +1,7 @@
+/* 
+    모든 페이지의 헤더에 해당함.
+    네비게이션 역할을 담고잇음
+*/
 import Link from 'next/link';
 import styled from 'styled-components/macro';
 import LogoSrc from '../static/images/netflix-logo.png';
@@ -23,7 +27,12 @@ const LogoImage = styled.img`
     margin: 15px 36px 15px 0;
 `;
 
-const ProgramWrapper = styled.span`
+const Navigation = styled.ul`
+    list-style-type: none;
+`;
+
+const NavigationItem = styled.li`
+    float: left;
     font-size: 18px;
     margin-right: 36px;
     cursor: pointer;
@@ -56,26 +65,30 @@ const Header = () => {
     return (
         <HeaderContainer>
             <LogoImage src={LogoSrc} alt="netfli clone logo" />
-            <ProgramWrapper>
-                <Link href="/">
-                    <a>홈</a>
-                </Link>
-            </ProgramWrapper>
-            <ProgramWrapper>
-                <Link href="/originals">
-                    <a>오리지널</a>
-                </Link>
-            </ProgramWrapper>
-            <ProgramWrapper>
-                <Link href="/movies">
-                    <a>영화</a>
-                </Link>
-            </ProgramWrapper>
-            <ProgramWrapper>
-                <Link href="/recent">
-                    <a>최신 콘텐츠</a>
-                </Link>
-            </ProgramWrapper>
+            <nav>
+                <Navigation>
+                    <NavigationItem>
+                        <Link href="/">
+                            <a>홈</a>
+                        </Link>
+                    </NavigationItem>
+                    <NavigationItem>
+                        <Link href="/originals">
+                            <a>오리지널</a>
+                        </Link>
+                    </NavigationItem>
+                    <NavigationItem>
+                        <Link href="/movies">
+                            <a>영화</a>
+                        </Link>
+                    </NavigationItem>
+                    <NavigationItem>
+                        <Link href="/recent">
+                            <a>최신 콘텐츠</a>
+                        </Link>
+                    </NavigationItem>
+                </Navigation>
+            </nav>
             <MenuContainer>
                 <CustomIcon icon={faSearch} size="xs" />
                 <CustomIcon icon={faBell} size="xs" />
