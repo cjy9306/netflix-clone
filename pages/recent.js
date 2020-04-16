@@ -15,9 +15,7 @@ const previewImage =
 const previewTitleSrc =
     'https://occ-0-1007-1361.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABSf9EBa-bF5uDD3_DvxZy8ioBoTx6oJnnGWPzFN6m1Q2B_5qxdAGJ3nzEUtO_sQnQ70bN0W4BfgULMYcW52z5KnR_KgAhFjAaA.webp?r=e74';
 const previewTitle = 'money heist';
-const previewSynopsis = `사상 최대의 무장강도를 치밀하게 계획해 온 '교수'. 잃을 것
-                없는 8인을 지휘하여 스페인 조폐국에 침투시킨다. 인질까지
-                잡았으니 이젠 독 안에 든 쥐가 될 차례.`;
+const previewSynopsis = `내 이름은 코너. 초능력을 타고난 탓에 세상이 배척하는 존재가 됐지. 영웅이 될 수 없는 능력이라면, 아픈 어머니를 위해서라도 써야겠다. 그 어떤 대가를 치르더라도.`;
 
 const Recent = ({ page1, page2, page3, page4 }) => {
     const options = { threshold: 0.01 };
