@@ -1,7 +1,10 @@
 # Netflix clone
 포트폴리오용으로 제작된 Netflix 클론 코딩 프로젝트입니다.  
+  
 NextJS를 사용하였으며, 현재는 영화들의 간단한 정보만을 SSR에서 미리 로딩합니다.  
+  
 Api는 themoviedb.org 의 api를 이용하였으며, 모든 영화 및 드라마 정보가 넷플릭스의 정보와 일치하지는 않습니다.  
+  
 Intersection Observer를 이용하여 Lazy Image Loading을 적용하였습니다.  
 
 ![netflix-1](https://user-images.githubusercontent.com/7731519/80943555-6d2e3b00-8e22-11ea-984c-b68053a1d244.png)
