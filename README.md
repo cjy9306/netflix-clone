@@ -18,11 +18,6 @@ npm install
 ```
 
 ## 프로젝트 설치 및 실행
-설치
-```
-npm install
-```
-
 시작
 ```
 npm start
