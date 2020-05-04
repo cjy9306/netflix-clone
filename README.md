@@ -6,6 +6,9 @@ Intersection Observer를 이용하여 Lazy Image Loading을 적용하였습니�
 
 클라이언트 Repo: [https://github.com/cjy9306/netflix-clone](https://github.com/cjy9306/netflix-clone)
 
+![netflix-1](https://user-images.githubusercontent.com/7731519/80943555-6d2e3b00-8e22-11ea-984c-b68053a1d244.png)
+
+![netflix-3](https://user-images.githubusercontent.com/7731519/80943568-74554900-8e22-11ea-9a86-b55d8b53ff7d.png)
 
 ## 프로젝트 설치
 ```
