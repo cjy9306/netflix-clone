@@ -1,4 +1,3 @@
-/* 넷플릭스 클론 사이트의 메인 페이지 */
 import styled from 'styled-components/macro';
 import axios from 'axios';
 import Genre from '../components/Genre';
@@ -19,6 +18,7 @@ const previewSynopsis = `사상 최대의 무장강도를 치밀하게 계획해
                 없는 8인을 지휘하여 스페인 조폐국에 침투시킨다. 인질까지
                 잡았으니 이젠 독 안에 든 쥐가 될 차례.`;
 
+// Netflix 홈 컴포넌트
 const Home = ({ recommend, original, topRated, trend }) => {
     const options = { threshold: 0.01 };
     let observer = null;

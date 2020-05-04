@@ -1,7 +1,3 @@
-/* 
-    모든 페이지의 헤더에 해당함.
-    네비게이션 역할을 담고잇음
-*/
 import Link from 'next/link';
 import styled from 'styled-components/macro';
 import LogoSrc from '../static/images/netflix-logo.png';
@@ -61,6 +57,7 @@ const CustomIcon = styled(FontAwesomeIcon)`
     }
 `;
 
+// 모든 페이지의 헤더에 해당함. 네비게이션 역할을 담고잇음
 const Header = () => {
     return (
         <HeaderContainer>

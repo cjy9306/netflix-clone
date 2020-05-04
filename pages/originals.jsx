@@ -1,4 +1,3 @@
-/* 넷플릭스 오리지널 시리즈를 보여주는 페이지 */
 import styled from 'styled-components/macro';
 import axios from 'axios';
 import Genre from '../components/Genre';
@@ -19,6 +18,7 @@ const previewSynopsis = `사상 최대의 무장강도를 치밀하게 계획해
                 없는 8인을 지휘하여 스페인 조폐국에 침투시킨다. 인질까지
                 잡았으니 이젠 독 안에 든 쥐가 될 차례.`;
 
+// Netflix 오리지널 컴포넌트. API 결과에 따라 Netflix 오리지널이 아닐 수도 있음
 const Originals = ({ page1, page2, page3, page4 }) => {
     const options = { threshold: 0.01 };
     let observer = null;

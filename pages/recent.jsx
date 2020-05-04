@@ -1,4 +1,3 @@
-/* 최신 넷플릭스 컨텐츠를 보여주는 페이지 */
 import styled from 'styled-components/macro';
 import axios from 'axios';
 import Genre from '../components/Genre';
@@ -17,6 +16,7 @@ const previewTitleSrc =
 const previewTitle = 'money heist';
 const previewSynopsis = `내 이름은 코너. 초능력을 타고난 탓에 세상이 배척하는 존재가 됐지. 영웅이 될 수 없는 능력이라면, 아픈 어머니를 위해서라도 써야겠다. 그 어떤 대가를 치르더라도.`;
 
+// 최신 넷플릭스 컨텐츠를 보여주는 페이지
 const Recent = ({ page1, page2, page3, page4 }) => {
     const options = { threshold: 0.01 };
     let observer = null;

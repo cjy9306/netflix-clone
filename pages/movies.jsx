@@ -1,4 +1,3 @@
-/* 영화 리스트를 보여주는 페이지 */
 import styled from 'styled-components/macro';
 import axios from 'axios';
 import Genre from '../components/Genre';
@@ -17,12 +16,14 @@ const previewTitleSrc =
 const previewTitle = 'warcraft';
 const previewSynopsis = `공존인가, 대립인가. 선택의 갈림길에 선 인간과 오크. 평화를 지키는 방법은 서로의 믿음뿐. 그러나 내부 분열로 더 큰 혼란이 야기되고, 전장의 살육은 멈출 줄 모른다.`;
 
+// 영화 리스트 페이지
 const Movies = ({ page1, page2, page3, page4 }) => {
     const options = { threshold: 0.01 };
     let observer = null;
 
     // 이미지를 lazy loading하기 위해 IntersectionObserver에 등록
     useEffect(() => {
+        // 서버에서는 window 객체가 없으므로 필터링 작업 필요
         if (window && 'IntersectionObserver' in window) {
             observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {

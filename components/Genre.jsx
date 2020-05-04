@@ -1,7 +1,3 @@
-/* 
-    장르를 나타내는 컴포넌트.
-    예를 들어, 넷플릭스 오리지널, 최신 콘텐츠, 영화 등 영화들을 묶는 그룹
-*/
 import styled from 'styled-components/macro';
 import Movie from './Movie';
 
@@ -24,6 +20,7 @@ const GenreContents = styled.div`
     white-space: nowrap;
 `;
 
+// 장르를 나타내는 컴포넌트. 예를 들어, 넷플릭스 오리지널, 최신 콘텐츠, 영화 등 영화들을 묶는 그룹
 const Genre = ({ type, movieList }) => {
     return (
         <GenreContainer>
