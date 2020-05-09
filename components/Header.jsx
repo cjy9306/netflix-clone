@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import LogoSrc from '../static/images/netflix-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBell } from '@fortawesome/free-solid-svg-icons';

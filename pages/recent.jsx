@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import axios from 'axios';
 import Genre from '../components/Genre';
 import Preview from '../components/Preview';

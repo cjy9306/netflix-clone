@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import Movie from './Movie';
 
 const GenreContainer = styled.section`
