@@ -22,7 +22,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "file-loader": "^6.0.0",
     "next": "^9.3.4",
     "nextjs-progressbar": "0.0.4",
